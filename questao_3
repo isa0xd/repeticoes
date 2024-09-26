@@ -1,0 +1,23 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero
+		inteiro maior_numero
+
+		escreva("informe um número: ")
+		leia(maior_numero)
+
+		para(inteiro i=0; i < 4; i++){
+			escreva("informe um número: ")
+			leia(numero)
+
+			se(numero > maior_numero){
+				maior_numero = numero
+			}
+		}
+
+		escreva("o maior numero é: ", maior_numero)
+	}
+}
