@@ -1,0 +1,35 @@
+programa
+{
+	funcao inicio()
+	{
+		real base
+		real resultado = 1.0
+		inteiro expoente
+
+		escreva("Informe a base da potenciação: ")
+		leia(base)
+
+		escreva("Informe o expoente da ponteciação: ")
+		leia(expoente)
+
+
+	se(expoente < 0){
+		base = 1/base
+		expoente = expoente * -1
+	}
+
+	se(expoente == 0){
+		escreva("o resultado é 1")
+	}
+	senao{
+		
+		para(inteiro i = expoente; i != 0; i--){
+
+			resultado = resultado * base
+		}
+
+		escreva("O resultado é ", resultado)
+			
+		}
+	}
+}
