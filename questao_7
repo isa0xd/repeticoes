@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro n_atual
+		inteiro resultado = 1
+
+		escreva("Informe um valor: ")
+		leia(n_atual)
+
+		enquanto(n_atual > 1)
+		{
+			resultado = resultado * n_atual
+			n_atual--
+		}
+		escreva("O resultado é ", resultado, ".")
+
+	}
+}
