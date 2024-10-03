@@ -1,0 +1,20 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro numero_atual = 1
+		inteiro numero_anterior = 0
+		inteiro numero_proximo = 0
+
+		enquanto(numero_atual <= 500)
+		{
+			escreva(numero_atual, "\n")
+			numero_proximo = numero_atual + numero_anterior
+
+			numero_anterior = numero_atual
+			numero_atual = numero_proximo
+		}
+		escreva(numero_atual)
+	}
+}
